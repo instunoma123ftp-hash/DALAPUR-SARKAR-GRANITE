@@ -449,7 +449,7 @@
           <div class="detail-row">
             <span class="label">TYRE</span>
             <span class="colon">:</span>
-            <span class="value">18 TYRE</span>
+            <span class="value" id="p-tyre">18 TYRE</span>
           </div>
 
           <div class="detail-row">
@@ -577,6 +577,7 @@
 
           const gross = Number(d.gross);
           const tare = Number(d.tare);
+          put("p-tyre", d.tyre);
 
           put(
             "p-net",
